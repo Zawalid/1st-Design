@@ -1,0 +1,182 @@
+:root {
+  --main-Color: #5454d4;
+  --secondary-Color: #ff7143;
+  --paragraph-Color: #696871;
+}
+.main-btn {
+  color: white;
+  padding: 10px 40px;
+  font-size: 17px;
+}
+* p {
+  font-family: "Mulish", sans-serif;
+  color: var(--paragraph-Color);
+}
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 50px;
+}
+a:not(.nav-link) {
+  text-decoration: none;
+  color: var(--main-Color) !important;
+}
+/* Start Header */
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--paragraph-Color);
+}
+.navbar .navbar-nav .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 75%;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav .nav-item .nav-link::before {
+    display: none;
+  }
+}
+.navbar .navbar-nav .nav-item .nav-link.active::before,
+.navbar .navbar-nav .nav-item .nav-link:hover::before {
+  background-color: var(--main-Color);
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+.navbar .main-btn {
+  background-color: var(--secondary-Color);
+}
+.navbar .btn:hover {
+  background-color: #ff7143cc;
+  color: white;
+}
+/* End Header */
+/* Start section-1 */
+.section-1 img {
+  width: 520px;
+}
+.section-1 .main-btn {
+  background-color: var(--main-Color);
+}
+.section-1 .btn:hover {
+  background-color: #5454d4c2;
+  color: white;
+}
+.section-1 .icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.section-1 .icon:hover {
+  background-color: var(--secondary-Color);
+}
+.section-1 .icon img {
+  width: 23px;
+}
+.section-1 h1 {
+  font-size: 80px;
+  font-family: "DM Sans", sans-serif;
+}
+@media (max-width: 991px) {
+  .section-1 h1 {
+    font-size: 50px;
+  }
+}
+/* End section-1 */
+/* Start section-2 */
+.section-2 img {
+  width: 150px;
+}
+/* End section-2 */
+/* Start Features */
+.features .image {
+  height: 100px;
+}
+.brands,
+.features {
+  box-shadow: 0 0 10px #ddd;
+}
+/* End Features */
+/* Start Pricing */
+.pricing h2 {
+  font-size: 60px;
+}
+.pricing .options {
+  background-color: #f7f7fb;
+}
+.pricing .options div {
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.pricing .yearly {
+  border-radius: 6px 0 0 6px;
+  background-color: var(--main-Color);
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+}
+.pricing .monthly {
+  border-radius: 0 6px 6px 0;
+  background-color: #f7f7fb;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+.pricing .container > :last-child > div:nth-child(2) {
+  background-color: var(--secondary-Color);
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+}
+@media (max-width: 991px) {
+  .pricing .container > :last-child > div:nth-child(2) {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+.pricing .container > :last-child > div:nth-child(2) a {
+  color: white !important;
+}
+.pricing .container > :last-child > :first-child,
+.pricing .container > :last-child > :last-child {
+  background-color: #f7f7fb;
+}
+.pricing .container > :last-child :first-child li,
+.pricing .container > :last-child :last-child li {
+  color: var(--paragraph-Color);
+}
+.pricing .price {
+  font-size: 60px;
+  font-family: "DM Sans", sans-serif;
+}
+/* End Pricing */
